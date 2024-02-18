@@ -15,38 +15,55 @@
 }
 
 html {
-  font-size: 67.5%;
   box-sizing: border-box;
+  font-size: 67.5%;
 }
 
 body {
-  font-size: 1.3rem;
   background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
   color: var(--color-primary-very-dark-magenta);
+  font-size: 1.3rem;
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
+  padding: 8rem 0 10rem;
   text-align: center;
 }
 
 .container {
   max-width: 1110px;
-  width: 90%;
   margin: 0 auto;
+  width: 90%;
 }
 
 h1 {
   font-size: clamp(3.2rem, 2.5vw, 4.8rem);
   font-weight: 700;
+  margin-bottom: 1.8rem;
 }
 
 h2 {
   font-weight: 700;
 }
 
-
-.content p {
+.content p{
+  color: var(--color-neutral-dark-grayish-magenta);
   font-size: 1.5rem;
-  color: var(--color-neutral-dark-grayish-magenta)
+  font-weight: 500;
+  line-height: 1.6666667;
+}
+
+.ratings li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin: 4rem 0;
+}
+
+.rating {
+  background-color: var(--color-neutral-light-grayish-magenta);
+  border-radius: 8px;
+  padding: 1.6rem;
+  font-weight: 700;
 }
