@@ -1,0 +1,52 @@
+:root {
+  /* Colors */
+  --color-primary-very-dark-magenta: hsl(300, 43%, 22%);
+  --color-primary-soft-pink: hsl(333, 80%, 67%);
+
+  --color-neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-neutral-white:  hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 67.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  color: var(--color-primary-very-dark-magenta);
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: clamp(3.2rem, 2.5vw, 4.8rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+
+.content p {
+  font-size: 1.5rem;
+  color: var(--color-neutral-dark-grayish-magenta)
+}
