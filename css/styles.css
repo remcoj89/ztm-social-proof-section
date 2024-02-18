@@ -67,3 +67,34 @@ h2 {
   padding: 1.6rem;
   font-weight: 700;
 }
+
+.testemonials--list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.testemonial{
+  background-color: var(--color-primary-very-dark-magenta);
+  border-radius: 8px;
+  color: var(--color-neutral-white);
+  padding: 4rem 3.2rem;
+}
+
+.reviewer-meta{
+  align-items: center;
+  display: flex;
+  gap: 2.3rem;
+  margin-bottom: 2.6rem;
+}
+
+.reviewer-meta span{
+  color: var(--color-primary-soft-pink);
+  margin-top: 0.5rem;
+}
+
+.avatar-image {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
