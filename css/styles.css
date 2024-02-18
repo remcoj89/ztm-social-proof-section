@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   /* Colors */
   --color-primary-very-dark-magenta: hsl(300, 43%, 22%);
@@ -7,12 +8,15 @@
   --color-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
   --color-neutral-white:  hsl(0, 0%, 100%);
 }
+/* End Variables */
 
+/* Base */
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
 
 html {
   box-sizing: border-box;
@@ -46,7 +50,9 @@ h1 {
 h2 {
   font-weight: 700;
 }
+/* End Base */
 
+/* Ratings */
 .content p{
   color: var(--color-neutral-dark-grayish-magenta);
   font-size: 1.5rem;
@@ -54,20 +60,35 @@ h2 {
   line-height: 1.6666667;
 }
 
-.ratings li {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
+.ratings {
   margin: 4rem 0;
+}
+
+.ratings > * + * {
+  margin-top: 1.6rem;
 }
 
 .rating {
   background-color: var(--color-neutral-light-grayish-magenta);
   border-radius: 8px;
   padding: 1.6rem;
+}
+
+.rating span {
+  display: inline-block;
   font-weight: 700;
 }
 
+.rating-stars {
+  margin-bottom: 1.6rem;
+}
+
+.rating-stars img {
+  margin: 0 2px;
+}
+/* End Ratings */
+
+/* Testemonials */
 .testemonials--list {
   display: flex;
   flex-direction: column;
@@ -88,13 +109,14 @@ h2 {
   margin-bottom: 2.6rem;
 }
 
-.reviewer-meta span{
+.reviewer-name span{
   color: var(--color-primary-soft-pink);
-  margin-top: 0.5rem;
+ line-height: 1.6;
 }
 
 .avatar-image {
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 }
+/* End Testmonials */
