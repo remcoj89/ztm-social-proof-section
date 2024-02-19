@@ -21,16 +21,19 @@
 html {
   box-sizing: border-box;
   font-size: 67.5%;
+  min-height: 100%;
 }
 
 body {
   background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
+  background-size: 60%, 100%;
   color: var(--color-primary-very-dark-magenta);
   font-size: 1.3rem;
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
+  min-height: 100%;
   padding: 8rem 0 10rem;
   text-align: center;
 }
@@ -42,7 +45,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(3.2rem, 2.5vw, 4.8rem);
+  font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 1.8rem;
 }
@@ -99,7 +102,8 @@ h2 {
   background-color: var(--color-primary-very-dark-magenta);
   border-radius: 8px;
   color: var(--color-neutral-white);
-  padding: 4rem 3.2rem;
+  padding: 4rem 3.2rem 3.2rem;
+  text-align: left;
 }
 
 .reviewer-meta{
@@ -109,9 +113,13 @@ h2 {
   margin-bottom: 2.6rem;
 }
 
+.reviewer-meta p {
+  font-weight: 500;
+}
+
 .reviewer-name span{
   color: var(--color-primary-soft-pink);
- line-height: 1.6;
+  line-height: 1.6;
 }
 
 .avatar-image {
@@ -120,3 +128,80 @@ h2 {
   width: 50px;
 }
 /* End Testmonials */
+
+
+@media (min-width: 650px) {
+
+  .container {
+    width: 70%;
+  }
+}
+
+
+@media (min-width: 900px) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-size: 40%, 75%;
+    padding: 12rem 0;
+    text-align: left;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+  }
+
+  .content {
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+  }
+
+  .ratings {
+    margin: 0;
+  }
+
+  .rating {
+    align-items: center;
+    display: flex;
+    padding: 1.6rem 6rem 1.6rem 3.2rem;
+    gap: 3.2rem;
+  }
+
+  .rating:nth-child(1) {
+    transform: translateX(-100px);
+  }
+  .rating:nth-child(2) {
+    transform: translateX(-50px);
+  }
+
+  .rating-stars {
+    margin-bottom: 0;
+  }
+
+  .testemonials--list {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .testemonial:nth-child(1){
+    transform: translateY(-16px);
+  }
+  .testemonial:nth-child(3){
+    transform: translateY(16px);
+  }
+}
+
+@media (min-width: 1050px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
